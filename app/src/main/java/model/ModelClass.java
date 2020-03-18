@@ -1,11 +1,14 @@
 package model;
 
-public class ModelClass {
+import androidx.appcompat.app.AppCompatActivity;
+
+public class ModelClass extends AppCompatActivity {
 
     public String data;
 
-    //public getView(){
+    @Override
+    public getView(View view){
 
-    //}
+    }
 
 }

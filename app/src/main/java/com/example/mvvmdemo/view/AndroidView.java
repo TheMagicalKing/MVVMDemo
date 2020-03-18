@@ -19,9 +19,10 @@ public class AndroidView extends AppCompatActivity {
 
 
 
-    public void userText() {
+    public void userText(View view) {
         TextView userInput = (TextView) findViewById(R.id.userInput);
         EditText info = (EditText) findViewById(R.id.userInputText);
-        userInput.setText((CharSequence) info);
+        userInput.setText(info.getText());
     }
+
 }
