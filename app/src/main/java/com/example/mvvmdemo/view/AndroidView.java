@@ -1,12 +1,15 @@
-package com.example.mvvmdemo;
+package com.example.mvvmdemo.view;
 
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.os.Bundle;
 import android.view.View;
+import android.widget.EditText;
 import android.widget.TextView;
 
-public class MainActivity extends AppCompatActivity {
+import com.example.mvvmdemo.R;
+
+public class AndroidView extends AppCompatActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -18,7 +21,7 @@ public class MainActivity extends AppCompatActivity {
 
     public void userText() {
         TextView userInput = (TextView) findViewById(R.id.userInput);
-        TextView info = (TextView) findViewById(R.id.userInputText);
+        EditText info = (EditText) findViewById(R.id.userInputText);
         userInput.setText((CharSequence) info);
     }
 }
