@@ -10,6 +10,8 @@ import android.widget.TextView;
 import com.example.mvvmdemo.R;
 
 public class AndroidView extends AppCompatActivity {
+    
+    // TODO AndroidView skal indeholde en instans af ModelClass
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -22,7 +24,7 @@ public class AndroidView extends AppCompatActivity {
     public void userText(View view) {
         TextView userInput = (TextView) findViewById(R.id.userInput);
         EditText info = (EditText) findViewById(R.id.userInputText);
-        userInput.setText(info.getText());
+        userInput.setText(info.getText()); // TODO Opdatering skal fremover gå gennem modellen, både set og get
     }
 
 }
